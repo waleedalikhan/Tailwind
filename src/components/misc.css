@@ -1,0 +1,55 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.thin-weight {
+  font-weight: 100;
+}
+
+.mySupperPara {
+  @apply text-gray-600 mt-0 tracking-wide text-base leading-relaxed font-hairline text-center;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-315deg) translate(1px, 6px);
+  transform: rotate(-315deg) translate(1px, 6px);
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  background: #000;
+}
+
+.change .line2 {
+  opacity: 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(315deg) translate(1px, -6px);
+  transform: rotate(315deg) translate(1px, -6px);
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  background: #000;
+}
+
+.line1, .line2, .line3 {
+  width: 29px;
+  height: 3px;
+  background: #000;
+  margin: 3px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.scroll-nav-ease{
+  transition: all ease-in-out .4s;
+}
+
+.scroll-nav {
+  @apply px-8 bg-gray-100 flex flex-wrap items-center lg:py-0 py-6 fixed left-0 right-0 scroll-nav-ease;
+}
+
+.def-nav {
+  @apply px-16 bg-gray-100 flex flex-wrap items-center lg:py-1 py-6 fixed left-0 right-0;
+}
