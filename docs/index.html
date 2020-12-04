@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TailWind CSS</title>
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/components/misc.css">
+
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-4 fixed right-0 left-0">
+        <a href="#!" class="navbar-brand">
+            <img src="./softsons.png" alt="" class="h-8">
+        </a>
+        <button class="navbar-toggler border-0 bg-transparent focus:outline-none focus:border-0" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </button>
+        <div class="collapse navbar-collapse justify-start ml-16 items-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link mr-6">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#why" class="nav-link mr-6">Why SoftSons</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent mt-2 dropdown-toggle focus:outline-none" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#web">Web Development</a>
+                            <a class="dropdown-item" href="#mob">Mobile App Development</a>
+                            <a class="dropdown-item" href="#scrap">Web Scraping</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Main Section -->
+    <section class="flex flex-wrap pb-48 xl:px-32" id="home">
+        <div class="lg:flex-1 pt-40 px-3 lg:mt-40">
+            <p class="uppercase text-green-400 tracking-widest text-base thin-weight mb-12">best-inline-class software
+                development</p>
+            <h1 class="text-blue-700 text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-light mb-10">We
+                build powerful digital
+                solutions and
+                experiences.</h1>
+            <p class="text-gray-600 mt-0 tracking-wide text-sm sm:text-base leading-relaxed font-hairline">Since 2007,
+                companies around the world have relied on our technical expertise to develop their vision. From digital
+                applications to insightful data solutions, we build it all with precision to engage your users and
+                superchange your business. We're the perfect technology partner for enterprise to rapidly growing
+                organizations ready to make an impact.</p>
+            <a href="#!" class="no-underline text-blue-500 hover:text-green-500">Tell us about your
+                project</a>
+        </div>
+        <div class="lg:flex-1">
+            <img class="object-cover object-center h-full w-full" src="./software-development.svg" alt="">
+        </div>
+    </section>
+    <!-- Main Section ends -->
+
+    <!-- Skills -->
+    <section class="bg-gray-300 pt-24 pb-16">
+        <div class="flex">
+            <div class="w-full px-20 pb-16">
+                <h1 class="text-blue-700 text-2xl sm:text-3xl md:text-4xl leading-tight font-light mb-4 text-center">We
+                    build powerful digital
+                    solutions and experiences.</h1>
+                <p class="text-gray-600 mt-0 tracking-wide text-base leading-relaxed font-hairline text-center">Our Team
+                    of 400+ experienced software engineers, developers, UX architects, and designers like to produce
+                    impactful software. We Create software that is used by millions of users, in sectors spanning
+                    Education, Technology, Healthcare, Travel and beyond.</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap lg:flex-no-wrap px-10 justify-center">
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Group-8.png" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Web</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">Our web
+                    development team creates intuitive user experiences wrapped up in beautiful designs. Everything we
+                    create is custom and precisely made to your specification. Our award-winning web apps have found the
+                    best deals for travelers, enabled business to maximize their ROI, and more.</p>
+                <a href="#!" class="text-left no-underline text-blue-500 hover:text-green-500">Learn More</a>
+            </div>
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Group-5.png" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Mobile</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">Our
+                    teams builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with
+                    you to understand your specifications and develop apps that provide an intuitve end user experience.
+                    Our ongoing support ensures your app is ever-ready for your users.</p>
+                <a href="#!" class="text-left no-underline text-blue-500 hover:text-green-500">Learn More</a>
+            </div>
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Group-4-1.png" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Data</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">Our
+                    powerful data mining techniques, including automated and semi-automated data scrapping and analysis
+                    services, accelerate data analysis. We specialize in creating custom models that collect data, apply
+                    the most effective analysis techniques, and convert it into actionable insights.</p>
+                <a href="#!" class="text-left no-underline text-blue-500 hover:text-green-500">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills ends -->
+
+    <!-- Relations -->
+    <section class="pt-24 pb-10">
+        <div class="flex">
+            <div class="w-full px-10 pb-16">
+                <h1 class="text-blue-700 text-2xl sm:text-3xl leading-tight font-thin mb-4 text-center">Great softwares
+                    need great
+                    relationships</h1>
+                <p class="mySupperPara">Beyond our skilled expertise, it is our customers and our relationship with them
+                    that sets us apart</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap md:flex-no-wrap px-8 mb-16">
+            <div class="w-full md:flex-1 text-center">
+                <img src="./logo-microsoft.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./harvard_university.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./UCSD.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./kayak-logo.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./tenmarks.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+        </div>
+        <div class="flex flex-wrap md:flex-no-wrap px-12 mb-16">
+            <div class="w-full md:flex-1 text-center">
+                <img src="./payperks.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./travelliance.jpg" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./mit-1.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./Indeed_logo.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./parktag.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+        </div>
+        <div class="flex flex-wrap md:flex-no-wrap px-12 mb-16">
+            <div class="w-full md:flex-1 text-center">
+                <img src="./stanford.png" alt="" class="h-6 lg:h-8  sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./edx-logo-registered.png" alt="" class="h-6 lg:h-8 sm:h-6 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./wanderu.png" alt="" class="h-8 lg:h-16 sm:h-10 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./logo-world-bank.png" alt="" class="h-8 lg:h-16 sm:h-10 text-center mb-8">
+            </div>
+            <div class="w-full md:flex-1 text-center">
+                <img src="./mcdonalds.png" alt="" class="h-8 lg:h-16 sm:h-6 text-center mb-8">
+            </div>
+        </div>
+    </section>
+    <!-- Relations ends -->
+
+    <!-- Reviews -->
+    <section class="py-16 px-6 md:px-26 bg-gray-200 mb-24">
+        <div class="flex">
+            <div class="w-full text-center">
+                <img src="./jake-85x85.jpg" alt="" class="mb-6">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-full">
+                <div class="bg-white py-4 px-8  mb-6 text-center">
+                    <p class="text-gray-700 leading-relaxed tracking-wider italic font-hairline">SoftSons is an integral
+                        part of our team and we probably wouldn't be here today without them. Some of their team has
+                        worked with us for 3-7 years and we've built a trusted business relationship. We share success
+                        together</p>
+                </div>
+                <p class="text-center tracking-widest text-black">Jake Peters</p>
+                <p class="text-center tracking-widest text-gray-500">CEO & Co-Founders, PayPerks</p>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews ends -->
+
+    <!-- Some Work -->
+    <section>
+        <div class="flex flex-wrap lg:flex-no-wrap">
+            <div class="w-full lg:w-1/2 bg-blue-100 pt-16 px-10 pb-8">
+                <p class="uppercase tracking-widest text-purple-700">travel</p>
+                <p class="text-gray-700 text-xl leading-relaxed tracking-wide">We helped build a leading travel search
+                    engine, enabling millions of travelers to see the world</p>
+                <a href="#" class="no-underline text-blue-800 capitalize tracking-widest">Read Story</a>
+                <img src="img-kayak.png" alt="" class="mt-12 h-48 sm:h-64">
+            </div>
+            <div class="w-full lg:w-1/2 bg-pink-100 pt-16 px-16 pb-8">
+                <p class="uppercase tracking-widest text-purple-700">education</p>
+                <p class="text-gray-700 text-xl leading-relaxed tracking-wide">We partnered with edX to put education in
+                    the pocket of 20 million learners</p>
+                <a href="#" class="no-underline text-purple-800 capitalize tracking-widest">Read Story</a>
+                <img src="img-edx-5.png" alt="" class="mt-12 h-64">
+            </div>
+        </div>
+    </section>
+    <!-- Some Work ends -->
+
+    <!-- Why SoftSons -->
+    <section class="" id="why">
+        <h1 class="mt-12 text-blue-700 text-4xl leading-tight font-light text-center">Why SoftSons</h1>
+        <!-- Main Section -->
+        <div class="flex flex-wrap pb-48 xl:px-32">
+            <div class="lg:flex-1 pt-24 px-3 lg:mt-40">
+                <h1
+                    class="text-blue-700 text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-light mb-10">
+                    SoftSons Legacy</h1>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm sm:text-base leading-relaxed font-hairline">We take
+                    pride in our strong capability for designing and engineering robust software using mobile, web and
+                    cloud technologies. Specializing in custom web applications, intuitive mobile apps, and robust data
+                    mining techniques, our team creates digital solutions that impact millions of lives. <br>Each
+                    solution started with an idea. Connect with us to share yours.</p>
+                <a href="#!" class="no-underline text-blue-500 hover:text-green-500">Tell us about your
+                    project</a>
+            </div>
+            <div class="lg:flex-1">
+                <img class="object-cover object-center h-full w-full mt-6" src="./about-arbisoft.svg" alt="">
+            </div>
+        </div>
+        <!-- Main Section ends -->
+
+        <!-- Expertise -->
+        <div class="flex flex-wrap lg:flex-no-wrap px-10 justify-center">
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Expert-Development.svg" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Expert Development</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">Our
+                    team of 400 experienced software engineers, developers, UX architects, and designers are world-class
+                    and driven to produce impactful software.</p>
+            </div>
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Insightful-Innovation.svg" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Cutting-Edge technology</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">We
+                    believe in the possibility of what can be. Our team has created thousands of solutions over the last
+                    10+years. Bring your idea and let us create it.</p>
+            </div>
+            <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl">
+                <img src="./Seamless-Collaboration.svg" alt="" class="h-32 mb-3">
+                <p class="text-left text-2xl text-blue-600">Seamless Collaboration</p>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">We
+                    understand the challenges of working with a remote team and focus on providing an experience that
+                    feels like having a software development team next door.</p>
+            </div>
+        </div>
+        <!-- Expertise ends -->
+
+        <!-- Proving Skills -->
+        <div class="bg-gray-100 p-0">
+            <h1
+                class="text-blue-700 text-xl sm:text-2xl lg:text-2xl font-thin leading-tight font-light mb-4 text-center pt-10 leading-snug mb-24 md:px-20">
+                At SoftSons we love to build and refine technologies that improve lives while developing great
+                relationships along the way</h1>
+            <div class="flex flex-wrap lg:flex-no-wrap px-10 justify-center">
+                <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg">
+                    <img src="./Quality.svg" alt="" class="h-32 mb-3">
+                    <p class="text-left text-xl text-blue-600">Build enduring partnerships</p>
+                    <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">We
+                        believe in nurturing long term relationships with our clients. You need a partner you can trust
+                        to not only ring your idea to life, but also to grow with.</p>
+                </div>
+                <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg">
+                    <img src="./Value.svg" alt="" class="h-32 mb-3">
+                    <p class="text-left text-xl text-blue-600">Creating Value</p>
+                    <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">We
+                        have rapidly built a world-class team of engineers ready to take on diverse and challenging
+                        projects with an aim to create real value for our partners and community.</p>
+                </div>
+                <div class="lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg">
+                    <img src="./Trust.svg" alt="" class="h-32 mb-3">
+                    <p class="text-left text-xl text-blue-600">Proven Capability</p>
+                    <p class="text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8">
+                        Give us a problem and we will engineer a solution! Our team of world-class engineers has
+                        developed enterprise and analytical softwares used by millions of users everyday.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Proving Skills ends -->
+    </section>
+    <!-- Why SoftSons Ends -->
+
+    <!-- Services -->
+    <section class="web">
+        <h1 class="mt-12 text-blue-700 text-4xl leading-tight font-light text-center mb-32">Our Services</h1>
+        <!-- Web Development -->
+        <div class="flex flex-wrap pb-48 xl:px-32" id="web">
+            <div class="lg:flex-1 pt-40 px-3">
+                <p class="uppercase text-purple-500 tracking-widest text-base thin-weight mb-12">Services</p>
+                <h1
+                    class="text-blue-700 text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-light mb-10">
+                    Web App Development</h1>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm sm:text-base leading-relaxed font-hairline">We create
+                    beautifully designed web apps precisely tailored to your situation. From providing Software as a
+                    Service to creating custom software to support your customers, our Web App team will get you up and
+                    running.</p>
+                <a href="#!" class="no-underline text-blue-500 hover:text-green-500">Tell us about your project</a>
+            </div>
+            <div class="lg:flex-1">
+                <img class="object-cover object-center h-full w-full" src="./web-app-development (1).svg" alt="">
+            </div>
+        </div>
+        <div class="bg-gray-100 px-6 py-4">
+            <h1 class="mt-12 text-blue-700 text-3xl leading-tight font-light text-center mb-32">Startups to Fortune 500
+                companies scale faster when partnering with SoftSons web app development team.</h1>
+            <div class="flex flex-wrap md:flex-no-wrap">
+                <div class="w-full md:w-1/2 text-center px-16">
+                    <img src="./custom-web-app.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Custom Web App Development</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We offer everything you need
+                        for web
+                        app development and ongoing support, including custom development, performance optimization,
+                        cloud-based deployment, API development and integration, continuous quality assurance, and
+                        round-the-clock Sass support.</p>
+                </div>
+                <div class="w-full md:w-1/2 text-center px-16">
+                    <img src="./Long-term-partnerships.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Long term Partnership</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We believe in nurturing long
+                        term relationships with our clients and investing in their success. All of our web app
+                        development projects have a dedicated developer team that continues to work on the product
+                        throughout its lifetime to ensure it's always functioning properly.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap md:flex-no-wrap mt-10">
+                <div class="w-full md:w-1/2 text-center px-16">
+                    <img src="./Scalabale-Software.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Scalable Software</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">Our web applications are
+                        designed to scale with your organization. We create tech stacks suited for the rapidly changing
+                        digital ecosystem and combine them with development best practices and Agile Scrum methodology
+                        so we can keep improving your web app even after launch.</p>
+                </div>
+                <div class="w-full md:w-1/2 text-center px-16">
+                    <img src="./Always-secure.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Always Secure</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We understand that
+                        interconnection of web apps can be a double-edged sword so we can scrutinize our web apps for
+                        security. We know your professional reputation (and ours) hinges on the reliability, and
+                        security of the service you provide.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Web Development ends -->
+
+        <!-- Mobile App Development -->
+        <div class="flex flex-wrap pt-48 xl:px-32" id="mob">
+            <div class="lg:flex-1 pt-40 px-3">
+                <p class="uppercase text-purple-500 tracking-widest text-base thin-weight mb-12">Services</p>
+                <h1
+                    class="text-blue-700 text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-light mb-10">
+                    Mobile App Development</h1>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm sm:text-base leading-relaxed font-hairline">US
+                    consumers spend nearly a quarter of their day on their mobile phone - and 92% of that time is spent
+                    using apps. Your app needs to be brilliantly designed and intuitive to have a shot at getting
+                    anyone's attention</p>
+                <a href="#!" class="no-underline text-blue-500 hover:text-green-500">Tell us about your project</a>
+            </div>
+            <div class="lg:flex-1">
+                <img class="object-cover object-center h-full w-full" src="./mobile-app-development.svg" alt="">
+            </div>
+        </div>
+        <div class="bg-gray-200 pb-8 pt-2">
+            <h1 class="mt-12 text-blue-700 text-3xl leading-tight font-light text-center mb-32 mt-32">Put Your Company
+                In Your Customers's Pocket</h1>
+            <div class="flex flex-wrap md:flex-no-wrap lg:px-48">
+                <div class="w-full lg:w-1/3 text-center px-16">
+                    <img src="./custom-app-design.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Specialist iOS Developers</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">Multi-disciplined iOS
+                        development teams supporting all your technical requirements under one roof.</p>
+                </div>
+                <div class="w-full lg:w-1/3 text-center px-16">
+                    <img src="./Android.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Android App Development</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We help keep your apps
+                        updated. We can wrangle the messiest legacy code, bring it inline with standards, and keep it
+                        functional, fast, and secure.</p>
+                </div>
+                <div class="w-full lg:w-1/3 text-center px-16">
+                    <img src="./app-extension-and-maintenance.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">App Extension & Maintenance</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We've collaborated on 2D and
+                        3D Android apps, mobile games and more that work with your native operating system capabilities
+                        and deliver delightful experiences.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile App Development ends -->
+
+        <!-- Web Scraping -->
+        <div class="flex flex-wrap pt-48 xl:px-32" id="scrap">
+            <div class="lg:flex-1 pt-40 px-3">
+                <p class="uppercase text-purple-500 tracking-widest text-base thin-weight mb-12">Services</p>
+                <h1
+                    class="text-blue-700 text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-light mb-10">
+                    Web Scraping Solutions</h1>
+                <p class="text-gray-600 mt-0 tracking-wide text-sm sm:text-base leading-relaxed font-hairline">Our
+                    engineers create custom web scraping solutions that quickly and efficiently gather the data you need
+                    and provide it to you in a structured way. We scour massive websites several layers deep to collect
+                    valuable data powering leading firms around the world.</p>
+                <a href="#!" class="no-underline text-blue-500 hover:text-green-500">Tell us about your project</a>
+            </div>
+            <div class="lg:flex-1">
+                <img class="object-cover object-center h-full w-full" src="./web-scraping.svg" alt="">
+            </div>
+        </div>
+        <div class="bg-gray-200 pb-8 pt-2">
+            <h1 class="mt-12 text-blue-700 text-3xl leading-tight font-light text-center mb-32 mt-32">Our web scrapers sift through the web's maze of data to find precisely what you need.</h1>
+            <div class="flex flex-wrap md:flex-no-wrap lg:px-48">
+                <div class="w-full lg:w-1/2 text-center px-16">
+                    <img src="./Extraction.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Extraction</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">Our web scraping tools scan the web and extract the information you need. We specialize in creating custom crawl through large quantities of data from multiple sources in parallel, retrieving usable data faster while breaking free of scaling constraints.</p>
+                </div>
+                <div class="w-full lg:w-1/2 text-center px-16">
+                    <img src="./Cleaning.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Cleaning</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">Oue data cleansing takes the raw data extracted by the web scraping tools and runs it through a processing platform to shake off old material, duplicates, incorrect details, and more. While data is valuable, 'clean' data is gold, enabling you to make the best possible decisions.</p>
+                </div>
+                <div class="w-full lg:w-1/2 text-center px-16">
+                    <img src="./QA-1.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Quality Assurance</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We have quality assurance checks built into every step of the process, ensuring your web scraping tools function well and work quickly.</p>
+                </div>
+                <div class="w-full lg:w-1/2 text-center px-16">
+                    <img src="./Verification.png" alt="" class="mb-5">
+                    <h1 class="mt-2 text-blue-600 text-left text-2xl text-thin mb-5">Verification & Validation</h1>
+                    <p class="text-left text-gray-700 leading-relaxed text-sm text-justify">We verify your data at every step of the process and check the integrity of the results created.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Web Scraping ends -->
+    </section>
+    <!-- Services ends -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-500 p-32">
+        <div class="flex flex-wrap md:flex-no-wrap">
+            <div class="w-1/4">
+                <p class="text-white font-bold mb-8">Home</p>
+                <a href="#!" class="text-white font-light block my-2">Why SoftSons</a>
+                <a href="#!" class="text-white font-light block my-2">Contact</a>
+                <a href="#!" class="text-white font-light block my-2">Careers</a>
+            </div>
+            <div class="w-1/4">
+                <p class="text-white font-bold mb-8">Clients</p>
+                <a href="#!" class="text-white font-light block my-2">KAYAK</a>
+                <a href="#!" class="text-white font-light block my-2">edX</a>
+                <a href="#!" class="text-white font-light block my-2">Travelliance</a>
+                <a href="#!" class="text-white font-light mb-8 block my-2">Wanderu</a>
+                <p class="text-white font-bold mb-8">Solutions</p>
+                <a href="#!" class="text-white font-light block my-2">Edly</a>
+                <a href="#!" class="text-white font-light block my-2">ListenTool</a>
+                <a href="#!" class="text-white font-light block my-2">Sentimeter</a>
+            </div>
+            <div class="w-1/4">
+                <p class="text-white font-bold mb-8">Services</p>
+                <a href="#!" class="text-white font-light block my-2">Web App Development</a>
+                <a href="#!" class="text-white font-light block my-2">Mobile App Development</a>
+                <a href="#!" class="text-white font-light block my-2">Custom Software Development</a>
+                <a href="#!" class="text-white font-light mb-8 block my-2">Team Extension</a>
+                <a href="#!" class="text-white font-light block my-2">3D Apps</a>
+                <a href="#!" class="text-white font-light block my-2">UI/UX</a>
+                <a href="#!" class="text-white font-light block my-2">DevOps</a>
+                <a href="#!" class="text-white font-light block my-2">Web Scraping</a>
+                <a href="#!" class="text-white font-light block my-2">Quality Assurance</a>
+            </div>
+        </div>
+    </footer>
+    <footer class="py-4 px-64">
+        <div class="flex flex-wrap">
+            <div class="flex-1">
+                <p>&copy; 2019 SoftSons. All Rights Reserved.</p>
+            </div>
+            <div class="flex-1 text-right">
+                <a href="#!" class="mx-3 text-black hover:text-black">Terms & Conditions</a>
+                <a href="#!" class="mx-3 text-black hover:text-black">Privacy Policy</a>
+                <a href="#home" class="ml-2 text-black text-4xl tracking-widest hover:text-black">^</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <!-- jQuery -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- BootStrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
