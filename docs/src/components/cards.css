@@ -1,0 +1,15 @@
+.card {
+    @apply  lg:w-1/4 md:w-full bg-white px-8 py-10 m-5 text-center rounded-lg shadow-xl;
+}
+
+.card img {
+    @apply h-32 mb-3;
+}
+
+.card .ph {
+    @apply text-left text-2xl text-blue-600;
+}
+
+.card .ptext {
+    @apply text-gray-600 mt-0 tracking-wide text-sm leading-relaxed font-hairline text-left mb-8;
+}
